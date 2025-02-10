@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>INST377 Lab 2 - bkang12</title>
+        <style>
+            body {
+                background-color: CadetBlue;
+            }
+            h1 {
+                text-align: center;
+            }
+            .desc {
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 50px;
+                font-size: 120%;
+                line-height: 10px;
+
+            }
+            input[type=submit] {
+                background-color: limegreen;
+                color: beige;
+                margin: 10px 2px;
+                transiton-duration: 0.4s;
+            }
+            input[type=submit]:hover {
+                background-color: greenyellow;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="labTitle">Download More Ram!</h1>
+        <div class="desc">
+            <p>Please enter your full (first and last) name</p>
+            <p>and the last four digits of your social security number</p>
+            <p>so that we can properly verify your details and downloaded ram</p>
+        </div>
+        <form action="submitted.html" method="get">
+            <label for="name">First and Last Name: </label>
+            <input type="text" id="name" required> <br>
+            <label for="number"> Last 4 digits of your SSN: </label>
+            <input type="number" id="number" required> <br>
+            <input type="submit" id="submit">
+        </form>
+    </body>
+</html>
